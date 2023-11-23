@@ -35,6 +35,14 @@
   margin-bottom: 10px;
 }
 
+.footer hr {
+  border: solid 2px #2669f6;
+  opacity: 1;
+  width: 130px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
 .footer .right {
   margin-left: 100px;
 }
@@ -43,7 +51,7 @@
   font-size: 32px;
   font-weight: 700;
   line-height: normal;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .d-flex {
