@@ -16,15 +16,19 @@
   background-color: pink;
 }
 
+.header img {
+  height: 80px;
+  margin: 10px;
+}
 /* Footer Section */
 .footer {
-  height: 395px;
+  min-height: 395px;
   background-color: black;
   color: white;
 }
 
 .footer img {
-  width: 200px;
+  max-width: 200px;
   margin: 36px;
 }
 
@@ -41,10 +45,6 @@
   width: 130px;
   margin-top: -10px;
   margin-bottom: 40px;
-}
-
-.footer .right {
-  margin-left: 100px;
 }
 
 .footer .f-right {
