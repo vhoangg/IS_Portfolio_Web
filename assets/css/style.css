@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.blue {
+  color: #2669f6;
+}
+
+/* Header Section */
+.header {
+  height: 100px;
+  background-color: pink;
+}
+
+/* Footer Section */
+.footer {
+  height: 395px;
+  background-color: black;
+  color: white;
+}
+
+.footer img {
+  width: 200px;
+  margin: 36px;
+}
+
+.footer .f-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.footer .right {
+  margin-left: 100px;
+}
+
+.footer .f-right {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 50px 0;
+}
+
+.d-flex {
+  gap: 10px;
+}
+
+.footer i {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.footer .f-info {
+  font-size: 18px;
+  line-height: 28px;
+}
