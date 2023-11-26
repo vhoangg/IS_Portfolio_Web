@@ -3,7 +3,7 @@
   padding: 0;
   border: none;
   text-decoration: none;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 .blue {
@@ -20,6 +20,7 @@
   height: 80px;
   margin: 10px;
 }
+
 /* Footer Section */
 .footer {
   min-height: 395px;
@@ -66,4 +67,8 @@
 .footer .f-info {
   font-size: 18px;
   line-height: 28px;
+}
+
+/* About us Section */
+.about_us {
 }
