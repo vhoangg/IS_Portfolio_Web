@@ -43,7 +43,7 @@
 .footer hr {
   border: solid 2px #2669f6;
   opacity: 1;
-  width: 130px;
+  max-width: 130px;
   margin-top: -10px;
   margin-bottom: 40px;
 }
@@ -75,20 +75,20 @@
 }
 
 .about_us .item {
-  width: 1050px;
+  max-width: 1050px;
   margin: 80px auto;
 }
 
 .about_us .underline {
   border: solid 2px #2669f6;
   opacity: 1;
-  width: 150px;
+  max-width: 150px;
   margin-top: -5px;
   margin-bottom: 30px;
 }
 
 .about_us .content {
-  width: 700px;
+  max-width: 700px;
 }
 
 .about_us .content p {
