@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -71,4 +71,32 @@
 
 /* About us Section */
 .about_us {
+  margin: 100px 0;
+}
+
+.about_us .item {
+  width: 1050px;
+  margin: 80px auto;
+}
+
+.about_us .underline {
+  border: solid 2px #2669f6;
+  opacity: 1;
+  width: 150px;
+  margin-top: -5px;
+  margin-bottom: 30px;
+}
+
+.about_us .content {
+  width: 700px;
+}
+
+.about_us .content p {
+  text-align: justify;
+  font-size: 25px;
+  line-height: normal;
+}
+
+.about_us .img img {
+  max-width: 250px;
 }
