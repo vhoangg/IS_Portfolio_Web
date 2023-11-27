@@ -4,10 +4,11 @@
   border: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  --blue: #2669f6;
 }
 
 .blue {
-  color: #2669f6;
+  color: #2669f6 !important;
 }
 
 /* Header Section */
@@ -16,9 +17,25 @@
   background-color: pink;
 }
 
-.header img {
+nav {
+  height: 100px;
+}
+
+nav .container {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+nav img {
   height: 80px;
-  margin: 10px;
+}
+
+.nav-link:hover {
+  color: var(--blue) !important;
+}
+
+nav .nav-item .nav-link {
+  font-weight: 500;
 }
 
 /* Footer Section */
@@ -70,5 +87,4 @@
 }
 
 /* About us Section */
-.about_us {
-}
+.about_us {}
