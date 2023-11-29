@@ -52,6 +52,21 @@
     }
 
     .contact .fragment {
-        width: 300px;
+        max-width: 160px;
+        height: auto;
+        padding: 10px !important;
+    }
+
+    .contact .contact-name {
+        font-size: 12px;
+    }
+
+    .contact .description {
+        font-size: 8px;
+    }
+
+    .contact svg {
+        max-width: 20px;
+        max-height: 20px;
     }
 }
