@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0be3ece2e3.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,39 +18,227 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo-khoa.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 blue" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#"> Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#">Đội ngũ giảng viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#">Đào tạo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="homepage">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo-khoa.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 blue" aria-current="page" href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#"> Về chúng tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Đội ngũ giảng viên</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Đào tạo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Liên hệ</a>
-                    </li>
-                </ul>
+            <div
+                class="section d-flex flex-md-row-reverse flex-column-reverse justify-content-evenly align-items-center">
+                <div class="img banner">
+                    <img src="./assets/images/banner.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="title">Chào mừng đến với</p>
+                    <p class="title httt">KHOA HỆ THỐNG THÔNG TIN</p>
+                    <p class="about-httt">
+                        Khoa Hệ thống Thông tin (HTTT) được thành lập vào năm 2006 cùng thời điểm thành lập của trường
+                        Đại học Công nghệ Thông tin ...</p>
+                    <a class="button-style btn btn-primary btn-lg" href="#" role="button">Đọc thêm
+                        <span>
+                            <svg fill="none" height="26" viewBox="0 0 22 24" width="26"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m17 12h-10m10 0-4-4m4 4-4 4" />
+                                </g>
+                            </svg>
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="section d-flex flex-md-row flex-column-reverse justify-content-evenly align-items-center">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+                <div class="content">
+                    <p class="title">Giới thiệu</p>
+                    <p class="title httt blue ">KHOA HỆ THỐNG THÔNG TIN</p>
+                    <a class="button-style btn btn-primary btn-lg" href="#" role="button">Xem trên Youtube
+                        <span>
+                            <svg fill="none" height="26" viewBox="0 0 22 24" width="26"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m17 12h-10m10 0-4-4m4 4-4 4" />
+                                </g>
+                            </svg>
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="section d-flex flex-md-row-reverse flex-column-reverse justify-content-evenly align-items-center">
+                <div class="img banner">
+                    <img src="./assets/images/daotaodh.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="title">Đào tạo đại học</p>
+                    <p class="about-httt">
+                        Hiện nay, khoa Hệ thống Thông tin – Trường ĐH Công nghệ Thông tin ĐHQG-HCM phụ trách đào tạo 02
+                        ngành: Hệ thống Thông tin và Thương mại Điện tử.</p>
+                    <a class="button-style btn btn-primary btn-lg" href="#" role="button">Đọc thêm
+                        <span>
+                            <svg fill="none" height="26" viewBox="0 0 22 24" width="26"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m17 12h-10m10 0-4-4m4 4-4 4" />
+                                </g>
+                            </svg>
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="tieude-datchuan">
+                <p>Đạt chuẩn <span class="blue">KIỂM ĐỊNH AUN-QA</span></p>
+            </div>
+            <div
+                class="section d-flex flex-md-row-reverse flex-column-reverse justify-content-evenly align-items-center">
+                <div class="img banner">
+                    <img src="./assets/images/datchuan.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="about-httt">
+                        Năm 2017, Khoa HTTT là khoa đầu tiên của Trường Đại học Công nghệ Thông tin được tổ chức mạng
+                        lưới các trường đại học Đông Nam Á (ASEAN University Network) công nhận đạt chuẩn kiểm định
+                        AUN-QA (ASEAN University Network – Quality Assurance).</p>
+                </div>
+            </div>
+            <div class="contact d-flex flex-row justify-content-evenly">
+                <div class="fragment p-4">
+                    <svg width="50" height="66" viewBox="0 0 50 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;Alternate Map Marker&#34;">
+                            <path id="Vector"
+                                d="M22.4307 64.4824C3.51172 37.4078 0 34.6291 0 24.6788C0 11.049 11.1928 0 25 0C38.8072 0 50 11.049 50 24.6788C50 34.6291 46.4883 37.4078 27.5693 64.4824C26.3277 66.2528 23.6721 66.2527 22.4307 64.4824ZM25 34.9617C30.753 34.9617 35.4167 30.3579 35.4167 24.6788C35.4167 18.9997 30.753 14.396 25 14.396C19.247 14.396 14.5833 18.9997 14.5833 24.6788C14.5833 30.3579 19.247 34.9617 25 34.9617Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Văn phòng
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        Tầng 9 - Tòa nhà E, Trường Đại học Công Nghệ Thông Tin, ĐHQG TP.HCM
+                    </p>
+                </div>
+                <div class="fragment p-4">
+                    <svg width="70" height="53" viewBox="0 0 70 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;Envelope&#34;">
+                            <path id="Vector"
+                                d="M68.6738 17.3359C69.207 16.9121 70 17.3086 70 17.9785V45.9375C70 49.5605 67.0605 52.5 63.4375 52.5H6.5625C2.93945 52.5 0 49.5605 0 45.9375V17.9922C0 17.3086 0.779297 16.9258 1.32617 17.3496C4.38867 19.7285 8.44922 22.75 22.3945 32.8809C25.2793 34.9863 30.1465 39.416 35 39.3887C39.8809 39.4297 44.8438 34.9043 47.6191 32.8809C61.5645 22.75 65.6113 19.7148 68.6738 17.3359ZM35 35C38.1719 35.0547 42.7383 31.0078 45.0352 29.3398C63.1777 16.1738 64.5586 15.0254 68.7422 11.7441C69.5352 11.1289 70 10.1719 70 9.16016V6.5625C70 2.93945 67.0605 0 63.4375 0H6.5625C2.93945 0 0 2.93945 0 6.5625V9.16016C0 10.1719 0.464844 11.1152 1.25781 11.7441C5.44141 15.0117 6.82227 16.1738 24.9648 29.3398C27.2617 31.0078 31.8281 35.0547 35 35Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Email
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        info.httt@uit.edu.vn
+                    </p>
+                </div>
+                <div class="fragment p-4">
+                    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;phone&#34;">
+                            <path id="Vector"
+                                d="M47.125 59.5837C36.0677 59.5694 25.4673 55.1705 17.6486 47.3518C9.82988 39.5331 5.43102 28.9327 5.41669 17.8754C5.41669 14.5712 6.72926 11.4024 9.06565 9.06602C11.402 6.72963 14.5709 5.41706 17.875 5.41706C18.5747 5.41173 19.2732 5.47523 19.9604 5.60664C20.6248 5.70495 21.278 5.86824 21.9104 6.09414C22.3553 6.25022 22.7517 6.51971 23.0604 6.87596C23.3692 7.23221 23.5796 7.66289 23.6709 8.12539L27.3813 24.3754C27.4813 24.8165 27.4692 25.2756 27.3462 25.7108C27.2232 26.1461 26.9932 26.5436 26.6771 26.8671C26.325 27.2462 26.2979 27.2733 22.9667 29.0066C25.6344 34.859 30.3149 39.5587 36.1563 42.2504C37.9167 38.8921 37.9438 38.865 38.3229 38.5129C38.6464 38.1968 39.0439 37.9668 39.4792 37.8438C39.9144 37.7208 40.3735 37.7087 40.8146 37.8087L57.0646 41.5191C57.5123 41.623 57.9262 41.8391 58.2673 42.1471C58.6085 42.4551 58.8656 42.8448 59.0146 43.2796C59.2432 43.9224 59.4154 44.5839 59.5292 45.2566C59.6382 45.9373 59.6925 46.6256 59.6917 47.315C59.6417 50.605 58.2923 53.7417 55.9379 56.0403C53.5835 58.3389 50.4153 59.6127 47.125 59.5837Z"
+                                fill="#231F20" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Hotline
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        028 3725 2002 (Ext: 119)
+                    </p>
+                </div>
+                <div class="fragment p-4">
+                    <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;facebook icon&#34;">
+                            <path id="Vector"
+                                d="M65.4026 32.7013C65.4026 14.6359 50.7545 0 32.7013 0C14.6359 0 0 14.6359 0 32.7013C0 49.0193 11.9544 62.5494 27.5917 65V42.1561H19.2876V32.7034H27.5917V25.4948C27.5917 17.301 32.4663 12.776 39.9385 12.776C43.5173 12.776 47.2636 13.4137 47.2636 13.4137V21.4602H43.133C39.0781 21.4602 37.8109 23.9844 37.8109 26.5698V32.7013H46.8794L45.4221 42.154H37.8109V64.998C53.436 62.5474 65.4026 49.0172 65.4026 32.6993V32.7013Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Fanpage khoa
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        Fanpage khoa Hệ Thống Thông Tin
+                    </p>
+                </div>
+                <div class="fragment p-4">
+                    <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;facebook icon&#34;">
+                            <path id="Vector"
+                                d="M65.4026 32.7013C65.4026 14.6359 50.7545 0 32.7013 0C14.6359 0 0 14.6359 0 32.7013C0 49.0193 11.9544 62.5494 27.5917 65V42.1561H19.2876V32.7034H27.5917V25.4948C27.5917 17.301 32.4663 12.776 39.9385 12.776C43.5173 12.776 47.2636 13.4137 47.2636 13.4137V21.4602H43.133C39.0781 21.4602 37.8109 23.9844 37.8109 26.5698V32.7013H46.8794L45.4221 42.154H37.8109V64.998C53.436 62.5474 65.4026 49.0172 65.4026 32.6993V32.7013Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Đoàn TN - Hội SV
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        Fanpage chính thức của Đoàn Khoa - Liên chi Hội HTTT
+                    </p>
+                </div>
+                <div class="fragment p-4">
+                    <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="&#240;&#159;&#166;&#134; icon &#34;facebook icon&#34;">
+                            <path id="Vector"
+                                d="M65.4026 32.7013C65.4026 14.6359 50.7545 0 32.7013 0C14.6359 0 0 14.6359 0 32.7013C0 49.0193 11.9544 62.5494 27.5917 65V42.1561H19.2876V32.7034H27.5917V25.4948C27.5917 17.301 32.4663 12.776 39.9385 12.776C43.5173 12.776 47.2636 13.4137 47.2636 13.4137V21.4602H43.133C39.0781 21.4602 37.8109 23.9844 37.8109 26.5698V32.7013H46.8794L45.4221 42.154H37.8109V64.998C53.436 62.5474 65.4026 49.0172 65.4026 32.6993V32.7013Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+                    <p class="contact-name my-2">
+                        Group sinh viên
+                    </p>
+                    <div class="line mb-4"></div>
+                    <p class="description">
+                        Group trao đổi học tập, hoạt động ngoại khoá của sinh viên khoa HTTT
+                    </p>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="main">
-
     </div>
     <div class="footer">
         <div class="container">
@@ -72,11 +261,33 @@
                     <p class="f-info"><i class="fa-brands fa-facebook"></i>
                         <a href="https://www.facebook.com/uit.khoahttt">https://www.facebook.com/uit.khoahttt</a>
                     </p>
-
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $(window).scroll(function () {
+            if (window.pageYOffset > 100) {
+                $(".header").addClass("bg-white", 'shadow')
+            }
+            else {
+                $(".header").removeClass("bg-white", 'shadow')
+            }
+        });
+        $(".navbar-toggler").click(function () {
+            $(".navbar").toggleClass("navbar-dark bg-dark");
+        })
+
+        $('html').click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $('.navbar-toggle').toggleClass('highlight');
+                CloseNav();
+            }
+
+        });
+    </script>
 </body>
 
 </html>
