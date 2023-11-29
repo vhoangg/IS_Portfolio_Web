@@ -15,6 +15,29 @@
   border-radius: 30px !important;
   background: #2669f6 !important;
   box-shadow: 1px 6px 4px 0px rgba(38, 119, 246, 0.25);
+  transition: all 0.5s !important;
+  position: relative;
+  padding: 15px 40px !important;
+}
+
+.button-style:after {
+  content: url(../images/icon-arrow.png);
+  position: absolute;
+  opacity: 0;
+  top: 15%;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-style:hover {
+  text-align: left !important;
+  padding-left: 20px !important;
+  padding-right: 60px !important;
+}
+
+.button-style:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 /* Header Section */
@@ -37,6 +60,34 @@ nav img {
 
 nav .nav-item .nav-link {
   font-weight: 500;
+  position: relative !important;
+}
+
+nav .nav-item .nav-link,
+nav .nav-item .nav-link:after,
+nav .nav-item .nav-link:before {
+  transition: all 0.5s;
+}
+
+nav .nav-item .nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #2669f6;
+  height: 1px;
+}
+
+.removeNavAnimated:after {
+  height: 0 !important;
+}
+
+nav .nav-item .nav-link:hover:after {
+  width: 100%;
 }
 
 .navbar-nav {
@@ -251,6 +302,43 @@ nav .nav-item .nav-link {
   bottom: 100px;
   right: 50px;
   display: none;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 15px solid #dddddd;
+  border-top-color: #2669f6;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 /* Animation */
