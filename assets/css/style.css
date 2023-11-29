@@ -215,8 +215,26 @@ nav .nav-item .nav-link {
   width: 100%;
   text-align: center;
   top: 10%;
-  font-size: 900%;
   font-weight: 700;
+  font-size: 900%;
+}
+
+@media screen and (max-width: 1400px) {
+  .staff .banner p {
+    font-size: 800% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .staff .banner p {
+    font-size: 700% !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .staff .banner p {
+    display: none;
+  }
 }
 
 .staff .card img {
@@ -225,6 +243,14 @@ nav .nav-item .nav-link {
   border-radius: 200px;
   object-fit: cover;
   object-position: top;
+}
+
+/* global */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  display: none;
 }
 
 /* Animation */
