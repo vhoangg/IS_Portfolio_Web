@@ -16,39 +16,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo-khoa.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5 " aria-current="page" href="./home.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5 blue" href="./about_us.html"> Về chúng tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Đội ngũ giảng viên</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Đào tạo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-5" href="#">Liên hệ</a>
-                    </li>
-                </ul>
+    <div class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="./home.html">
+                    <img src="./assets/images/logo-khoa.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active " aria-current="page" href="./home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5  blue" href="./about_us.html"> Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="./teaching_staff.html">Đội ngũ giảng viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#">Đào tạo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="about_us">
         <div class="container">
@@ -168,11 +171,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 text-center">
-                    <img src="./assets/images/logo-footer.png" alt="">
+                    <img class="img-fluid" src="./assets/images/logo-footer.png" alt="">
                     <p class="f-title blue">KHOA HỆ THỐNG THÔNG TIN</p>
                     <p class="f-title ">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</p>
                 </div>
-                <div class="col-xl-5 ml-3">
+                <div class="col-xl-5 ms-5">
                     <p class="f-right">Liên hệ</p>
                     <hr>
                     <div class="d-flex">
@@ -191,25 +194,7 @@
         </div>
     </div>
 
-    <script>
-        var reveals = document.querySelectorAll(".reveal");
-        reveals[0].classList.add("active");
-        function reveal() {
-
-
-            for (var i = 1; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-    </script>
 </body>
+<script src="./assets/js/main.js"></script>
 
 </html>

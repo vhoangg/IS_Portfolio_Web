@@ -1,8 +1,8 @@
 [
-    {"name": "Nguyễn Thanh Bình", "level": "TIẾN SĨ","role": "Trưởng Bộ môn", "img": "./assets/images/GV/default.png"},
+    {"name": "Nguyễn Thanh Bình", "level": "TIẾN SĨ","role": "Trưởng Bộ môn", "img": "./assets/images/GV/binhnt.png"},
     {"name": "NGUYỄN ĐÌNH THUÂN", "level": "PHÓ GIÁO SƯ, TIẾN SĨ","role": "Giảng viên cao cấp", "img": "./assets/images/GV/thuannd.png"},
     {"name": "Nguyễn Thị Kim Phụng", "level": "THẠC SĨ","role": "Giảng viên chính", "img": "./assets/images/GV/phungntk.png"},
-    {"name": "Trần Hưng Nghiệp", "level": "TIẾN SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
+    {"name": "Trần Hưng Nghiệp", "level": "TIẾN SĨ","role": "Giảng viên", "img": "./assets/images/GV/nghiepth.png"},
     {"name": "Đỗ Thị Minh Phụng", "level": "THẠC SĨ","role": "Giảng viên chính", "img": "./assets/images/GV/default.png"},
     {"name": "Trương Thu Thủy", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Nguyễn Hồ Duy Trí", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/trinhd.png"},
