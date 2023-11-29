@@ -45,14 +45,14 @@ nav .nav-item .nav-link {
 
 /* Footer Section */
 .footer {
-  min-height: 395px;
+  min-height: 350px;
   background-color: black;
   color: white;
 }
 
 .footer img {
-  max-width: 200px;
-  margin: 36px;
+  max-width: 180px;
+  margin: 30px;
 }
 
 .footer .f-title {
@@ -74,7 +74,7 @@ nav .nav-item .nav-link {
   font-size: 32px;
   font-weight: 700;
   line-height: normal;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .d-flex {
@@ -178,7 +178,6 @@ nav .nav-item .nav-link {
 
 .about_us .content {
   max-width: 700px;
-
 }
 
 .about_us .content p {
@@ -189,4 +188,82 @@ nav .nav-item .nav-link {
 
 .about_us .img img {
   max-width: 250px;
+}
+
+/* Teaching staff section */
+.staff {
+  margin: 50px 0;
+}
+
+.staff .banner {
+  position: relative;
+  align-items: center;
+}
+
+.staff .banner p {
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+  font-size: 900%;
+  font-weight: 700;
+}
+
+.staff .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Animation */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+/* keyframe section */
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
