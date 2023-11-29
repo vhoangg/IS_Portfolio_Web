@@ -16,6 +16,10 @@
     .tieude-datchuan {
         font-size: 25px;
     }
+
+    .homepage iframe {
+        max-width: 580px;
+    }
 }
 
 @media (max-width: 1000px) {
