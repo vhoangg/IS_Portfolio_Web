@@ -1,6 +1,6 @@
 [
     {"name": "Trình Trọng Tín", "level": "THẠC SĨ","role": "Phó trưởng Bộ môn", "img": "./assets/images/GV/default.png"},
-    {"name": "Đỗ Phúc", "level": "GIÁO SƯ, TIẾN SĨ","role": "Giảng viên cao cấp", "img": "./assets/images/GV/default.png"},
+    {"name": "Đỗ Phúc", "level": "GIÁO SƯ, TIẾN SĨ","role": "Giảng viên cao cấp", "img": "./assets/images/GV/phucd.png"},
     {"name": "Trần Văn Hải Triều", "level": "TIẾN SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Văn Đức Sơn Hà", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Huỳnh Đức Huy", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},

@@ -50,40 +50,40 @@
 
     <div class="staff">
         <div class="container">
-            <div class="banner">
+            <div class="banner reveal fade-bottom">
                 <img class="img-fluid" src="./assets/images/doinguGV.png" alt="">
                 <p>ĐỘI NGŨ <br>GIẢNG VIÊN</p>
             </div>
 
             <div class="group my-5">
-                <div class="title text-center mb-5">
+                <div class="title text-center mb-5 reveal fade-bottom">
                     <p class="h1">Bộ môn Hệ thống Thông tin Quản lý</p>
                     <p class="h1 blue">(Department of Management Information System)</p>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 htttql">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 htttql reveal fade-bottom">
 
                 </div>
             </div>
 
             <div class="group my-5">
-                <div class="title text-center mb-5">
+                <div class="title text-center mb-5 reveal fade-bottom">
                     <p class="h1">Bộ môn Hệ thống Thông tin Thông minh</p>
                     <p class="h1 blue">(Department of Intelligent Information System)</p>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 httttm">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 httttm reveal fade-bottom">
 
                 </div>
             </div>
 
             <div class="group my-5">
-                <div class="title text-center mb-5">
+                <div class="title text-center mb-5 reveal fade-bottom">
                     <p class="h1">Bộ môn Thương mại Điện tử</p>
                     <p class="h1 blue">(Department of E-Commerce)</p>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 tmdt">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 tmdt reveal fade-bottom">
 
                 </div>
             </div>
@@ -116,6 +116,25 @@
         </div>
     </div>
     <script>
+
+        var reveals = document.querySelectorAll(".reveal");
+        reveals[0].classList.add("active");
+        function reveal() {
+
+
+            for (var i = 1; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
         let htttql = document.querySelector('.htttql');
         let httttm = document.querySelector('.httttm');
         let tmdt = document.querySelector('.tmdt');
@@ -190,14 +209,3 @@
 </body>
 
 </html>
-
-<div class="col">
-    <div class="card align-items-center text-center pt-3">
-        <img src="./assets/images/user.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">NGUYỄN THANH BÌNH</h5>
-            <p class="card-text text-muted mb-0">TIẾN SĨ</p>
-            <p class="card-text">Trưởng bộ môn</p>
-        </div>
-    </div>
-</div>

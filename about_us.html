@@ -52,7 +52,8 @@
 
     <div class="about_us">
         <div class="container">
-            <div class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center reveal fade-left">
                 <div class="img mx-5">
                     <img src="./assets/images/history.png" alt="">
                 </div>
@@ -69,7 +70,8 @@
                     </p>
                 </div>
             </div>
-            <div class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center reveal fade-right">
                 <div class="img mx-5">
                     <img src="./assets/images/group.png" alt="">
                 </div>
@@ -89,7 +91,8 @@
                     </p>
                 </div>
             </div>
-            <div class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center reveal fade-left">
                 <div class="img mx-5">
                     <img src="./assets/images/book.png" alt="">
                 </div>
@@ -106,7 +109,8 @@
                     </p>
                 </div>
             </div>
-            <div class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center reveal fade-right">
                 <div class="img mx-5">
                     <img src="./assets/images/telescope.png" alt="">
                 </div>
@@ -120,7 +124,8 @@
                     </p>
                 </div>
             </div>
-            <div class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row-reverse flex-column-reverse justify-content-between align-items-center reveal fade-left">
                 <div class="img mx-5">
                     <img src="./assets/images/mountain.png" alt="">
                 </div>
@@ -136,7 +141,8 @@
                     </p>
                 </div>
             </div>
-            <div class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center">
+            <div
+                class="item d-flex flex-md-row flex-column-reverse justify-content-between align-items-center reveal fade-right">
                 <div class="img mx-5">
                     <img src="./assets/images/medal.png" alt="">
                 </div>
@@ -184,6 +190,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var reveals = document.querySelectorAll(".reveal");
+        reveals[0].classList.add("active");
+        function reveal() {
+
+
+            for (var i = 1; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
 </body>
 
 </html>
