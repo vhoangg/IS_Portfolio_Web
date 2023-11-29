@@ -1,3 +1,4 @@
+// Nav bar
 $(window).scroll(function () {
     if (window.pageYOffset > 100) {
         $(".header").addClass("bg-white", 'shadow')
@@ -20,6 +21,7 @@ $('html').click(function (event) {
 
 });
 
+// Animations
 var reveals = document.querySelectorAll(".reveal");
 reveals[0].classList.add("active");
 function reveal() {
@@ -37,3 +39,25 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Back to top Button
+let backToTopBtn = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+backToTopBtn.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
