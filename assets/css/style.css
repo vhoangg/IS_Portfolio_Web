@@ -148,7 +148,7 @@ nav .nav-item .nav-link {
 
 .contact .fragment:hover {
   transform: scale(1.03);
-  border: #2669f6 solid 1px;
+  border: #2669f6 solid 2px;
   transition: all 0.5s;
 }
 
@@ -290,11 +290,12 @@ nav .nav-item .nav-link {
   0% {
     transform: translatey(0px);
   }
+
   50% {
     transform: translatey(-20px);
   }
+
   100% {
     transform: translatey(0px);
   }
 }
-
