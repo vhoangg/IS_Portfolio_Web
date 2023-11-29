@@ -11,13 +11,14 @@
   color: #2669f6 !important;
 }
 
-/* Header Section */
-.header {
-  height: 100px;
-  background-color: pink;
+.button-style {
+  border-radius: 30px !important;
+  background: #2669F6 !important;
+  box-shadow: 1px 6px 4px 0px rgba(38, 119, 246, 0.25);
 }
 
-nav {
+/* Header Section */
+.header {
   height: 100px;
 }
 
@@ -36,6 +37,10 @@ nav img {
 
 nav .nav-item .nav-link {
   font-weight: 500;
+}
+
+.navbar-nav {
+  column-gap: 50px;
 }
 
 /* Footer Section */
@@ -86,6 +91,73 @@ nav .nav-item .nav-link {
   line-height: 28px;
 }
 
+/* HomePage */
+.homepage {
+  margin-top: 200px;
+}
+
+.homepage .banner img {
+  width: auto;
+  height: 430px;
+}
+
+.homepage .section {
+  margin-bottom: 150px;
+}
+
+.homepage .section .title {
+  font-size: 40px;
+}
+
+.homepage .section .httt {
+  font-weight: 600;
+}
+
+.homepage iframe {
+  height: 450px;
+  width: 600px;
+}
+
+.homepage .about-httt {
+  max-width: 600px;
+  font-size: 25px;
+}
+
+.tieude-datchuan {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.contact {
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 150px;
+  flex-wrap: wrap;
+}
+
+.contact .fragment {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
+  width: 380px;
+}
+
+.contact .contact-name {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact .description {
+  font-size: 18px;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background: #2669F6;
+}
+
 /* About us Section */
 .about_us {
   margin: 100px 0;
@@ -107,6 +179,7 @@ nav .nav-item .nav-link {
 .about_us .content {
   max-width: 700px;
 
+}
 
 .about_us .content p {
   text-align: justify;
