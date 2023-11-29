@@ -13,7 +13,7 @@
 
 .button-style {
   border-radius: 30px !important;
-  background: #2669F6 !important;
+  background: #2669f6 !important;
   box-shadow: 1px 6px 4px 0px rgba(38, 119, 246, 0.25);
 }
 
@@ -99,6 +99,7 @@ nav .nav-item .nav-link {
 .homepage .banner img {
   width: auto;
   height: 430px;
+  animation: floating 3s ease-in-out infinite;
 }
 
 .homepage .section {
@@ -121,6 +122,7 @@ nav .nav-item .nav-link {
 .homepage .about-httt {
   max-width: 600px;
   font-size: 25px;
+  text-align: justify;
 }
 
 .tieude-datchuan {
@@ -138,9 +140,16 @@ nav .nav-item .nav-link {
 
 .contact .fragment {
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
   width: 380px;
+  cursor: pointer;
+}
+
+.contact .fragment:hover {
+  transform: scale(1.03);
+  border: #2669f6 solid 1px;
+  transition: all 0.5s;
 }
 
 .contact .contact-name {
@@ -155,12 +164,12 @@ nav .nav-item .nav-link {
 .line {
   width: 100px;
   height: 3px;
-  background: #2669F6;
+  background: #2669f6;
 }
 
 /* About us Section */
 .about_us {
-  margin: 100px 0;
+  margin: 200px 0;
 }
 
 .about_us .item {
@@ -192,7 +201,7 @@ nav .nav-item .nav-link {
 
 /* Teaching staff section */
 .staff {
-  margin: 50px 0;
+  margin: 150px 0;
 }
 
 .staff .banner {
@@ -276,3 +285,16 @@ nav .nav-item .nav-link {
     opacity: 1;
   }
 }
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
