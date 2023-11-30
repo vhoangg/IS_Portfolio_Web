@@ -1,3 +1,4 @@
+/* home */
 @media (max-width: 1400px) {
     .homepage .section .title {
         font-size: 30px;
@@ -13,7 +14,7 @@
         font-size: 25px;
     }
 
-    .tieude-datchuan {
+    .homepage .tieude-datchuan {
         font-size: 25px;
     }
 
@@ -33,13 +34,14 @@
         max-width: 350px;
     }
 
-    .contact .fragment {
+    .homepage .contact .fragment {
         width: 320px;
     }
 
-    .contact .fragment {
+    .homepage .contact .fragment {
         font-size: auto;
     }
+
 }
 
 @media (max-width: 770px) {
@@ -51,22 +53,58 @@
         width: 100%;
     }
 
-    .contact .fragment {
+    .homepage .contact .fragment {
         max-width: 160px;
         height: auto;
         padding: 10px !important;
     }
 
-    .contact .contact-name {
+    .homepage .contact .contact-name {
         font-size: 12px;
     }
 
-    .contact .description {
+    .homepage .contact .description {
         font-size: 8px;
     }
 
-    .contact svg {
+    .homepage .contact svg {
         max-width: 20px;
         max-height: 20px;
+    }
+
+    .homepage .line {
+        margin-bottom: 5px !important;
+    }
+}
+
+/* staff */
+@media screen and (max-width: 1400px) {
+    .staff .banner p {
+        font-size: 800% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .staff .banner p {
+        font-size: 700% !important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .staff .banner p {
+        display: none;
+    }
+}
+
+/* dao tao */
+@media (max-width: 992px) {
+    .daotao .detail {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .daotao .detail {
+        font-size: 14px;
     }
 }
