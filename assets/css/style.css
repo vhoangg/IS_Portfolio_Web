@@ -1,3 +1,4 @@
+/* All page */
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +39,13 @@
 .button-style:hover:after {
   opacity: 1;
   right: 10px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  display: none;
 }
 
 /* Header Section */
@@ -145,11 +153,13 @@ nav .nav-item .nav-link:hover:after {
 /* HomePage */
 .homepage {
   margin-top: 200px;
+  margin-bottom: 100px;
+
 }
 
 .homepage .banner img {
   width: auto;
-  height: 430px;
+  max-height: 430px;
   animation: floating 3s ease-in-out infinite;
 }
 
@@ -176,20 +186,19 @@ nav .nav-item .nav-link:hover:after {
   text-align: justify;
 }
 
-.tieude-datchuan {
+.homepage .tieude-datchuan {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
 }
 
-.contact {
-  gap: 30px;
+.homepage .contact {
+  /* gap: 30px; */
   width: 100%;
-  margin-bottom: 150px;
   flex-wrap: wrap;
 }
 
-.contact .fragment {
+.homepage .contact .fragment {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
@@ -197,22 +206,22 @@ nav .nav-item .nav-link:hover:after {
   cursor: pointer;
 }
 
-.contact .fragment:hover {
+.homepage .contact .fragment:hover {
   transform: scale(1.03);
   border: #2669f6 solid 2px;
   transition: all 0.5s;
 }
 
-.contact .contact-name {
+.homepage .contact .contact-name {
   font-size: 25px;
   font-weight: 500;
 }
 
-.contact .description {
+.homepage .contact .description {
   font-size: 18px;
 }
 
-.line {
+.homepage .line {
   width: 100px;
   height: 3px;
   background: #2669f6;
@@ -270,24 +279,6 @@ nav .nav-item .nav-link:hover:after {
   font-size: 900%;
 }
 
-@media screen and (max-width: 1400px) {
-  .staff .banner p {
-    font-size: 800% !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .staff .banner p {
-    font-size: 700% !important;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .staff .banner p {
-    display: none;
-  }
-}
-
 .staff .card img {
   width: 200px;
   height: 200px;
@@ -296,12 +287,66 @@ nav .nav-item .nav-link:hover:after {
   object-position: top;
 }
 
-/* global */
-#btn-back-to-top {
-  position: fixed;
-  bottom: 100px;
-  right: 50px;
-  display: none;
+/* Dao Tao */
+.daotao {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+.daotao .content p {
+  max-width: 750px;
+}
+
+.daotao img {
+  -webkit-transition: all 0.7s ease;
+  transition: all 2s ease;
+}
+
+.daotao .info {
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.daotao .info .fragment {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
+  width: 380px;
+  cursor: pointer;
+}
+
+.daotao .info .fragment:hover {
+  transform: scale(1.03);
+  border: #2669f6 solid 1px;
+  transition: all 0.5s;
+}
+
+.daotao .slide-item {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.daotao .slide-item:hover {
+  transform: scale(1.03);
+  border: #2669f6 solid 1px;
+  transition: all 0.5s;
+}
+
+.carousel-item {
+  padding: 5px;
+}
+
+#carouselExampleCaptions {
+  height: 300px;
+}
+
+.daotao .info .description {
+  font-size: 18px;
 }
 
 .loader {
