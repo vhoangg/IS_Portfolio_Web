@@ -6,7 +6,7 @@
     {"name": "Đỗ Thị Minh Phụng", "level": "THẠC SĨ","role": "Giảng viên chính", "img": "./assets/images/GV/default.png"},
     {"name": "Trương Thu Thủy", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Nguyễn Hồ Duy Trí", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/trinhd.png"},
-    {"name": "Hà Lê Hoài Trung", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
-    {"name": "Dương Phi Long", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
+    {"name": "Hà Lê Hoài Trung", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/trunghlh.png"},
+    {"name": "Dương Phi Long", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/longdp.png"},
     {"name": "Tạ Việt Phương", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"}
 ]

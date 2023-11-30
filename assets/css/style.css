@@ -74,28 +74,7 @@ nav .nav-item .nav-link {
 nav .nav-item .nav-link,
 nav .nav-item .nav-link:after,
 nav .nav-item .nav-link:before {
-  transition: all 0.5s;
-}
-
-nav .nav-item .nav-link:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #2669f6;
-  height: 1px;
-}
-
-.removeNavAnimated:after {
-  height: 0 !important;
-}
-
-nav .nav-item .nav-link:hover:after {
-  width: 100%;
+  transition: all 0.3s;
 }
 
 .navbar-nav {
@@ -154,7 +133,6 @@ nav .nav-item .nav-link:hover:after {
 .homepage {
   margin-top: 200px;
   margin-bottom: 100px;
-
 }
 
 .homepage .banner img {
@@ -295,6 +273,8 @@ nav .nav-item .nav-link:hover:after {
 
 .daotao .content p {
   max-width: 750px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .daotao img {

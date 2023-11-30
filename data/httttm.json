@@ -3,9 +3,9 @@
     {"name": "Hoàng Trọng Nghĩa", "level": "TIẾN SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Huỳnh Hữu Việt", "level": "TIẾN SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
     {"name": "Thái Bảo Trân", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/trantb.png"},
-    {"name": "Mai Xuân Hùng", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
-    {"name": "Vũ Minh Sang", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
-    {"name": "Đỗ Duy Thanh", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
+    {"name": "Mai Xuân Hùng", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/hungmx.png"},
+    {"name": "Vũ Minh Sang", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/sangvm.png"},
+    {"name": "Đỗ Duy Thanh", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/thanhdd.png"},
     {"name": "Nguyễn Quốc Việt", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
-    {"name": "Võ Viết Đạt", "level": "KỸ SƯ","role": "Trợ giảng", "img": "./assets/images/GV/datvv.png"}
+    {"name": "Võ Viết Đạt", "level": "KỸ SƯ","role": "Trợ giảng", "img": "./assets/images/GV/default.png"}
 ]
