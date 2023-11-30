@@ -1,39 +1,38 @@
 /* home */
 @media (max-width: 1400px) {
-    .homepage .section .title {
-        font-size: 30px;
-    }
+  .homepage .section .title {
+    font-size: 30px;
+  }
 
-    .homepage .about-httt {
-        font-size: 16px;
-    }
+  .homepage .about-httt {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .homepage .section .title {
-        font-size: 25px;
-    }
+  .homepage .section .title {
+    font-size: 25px;
+  }
 
     .homepage .tieude-datchuan {
         font-size: 25px;
     }
 
-    .homepage iframe {
-        max-width: 580px;
-    }
+  .homepage iframe {
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .homepage .banner img {
-        max-width: 350px;
-        height: auto;
-    }
+  .homepage .banner img {
+    max-width: 350px;
+    height: auto;
+  }
 
-    .homepage iframe {
-        max-height: 350px;
-        max-width: 350px;
-    }
-
+  .homepage iframe {
+    max-height: 350px;
+    max-width: 350px;
+  }
     .homepage .contact .fragment {
         width: 320px;
     }
@@ -41,10 +40,9 @@
     .homepage .contact .fragment {
         font-size: auto;
     }
-
 }
-
 @media (max-width: 770px) {
+
     .homepage .section {
         margin-bottom: 100px;
     }
@@ -108,3 +106,4 @@
         font-size: 14px;
     }
 }
+
