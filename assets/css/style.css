@@ -48,7 +48,7 @@
   display: none;
 }
 
-/* Header Section */
+/* HEADER */
 .header {
   height: 90px;
 }
@@ -85,7 +85,7 @@ nav .nav-item .nav-link:before {
   column-gap: 50px;
 }
 
-/* Footer Section */
+/* FOOTER*/
 .footer {
   min-height: 350px;
   background-color: black;
@@ -133,7 +133,7 @@ nav .nav-item .nav-link:before {
   line-height: 28px;
 }
 
-/* HomePage */
+/* HOMEPAGE */
 .homepage {
   margin-top: 200px;
   margin-bottom: 100px;
@@ -210,7 +210,7 @@ nav .nav-item .nav-link:before {
   background: #2669f6;
 }
 
-/* About us Section */
+/* ABOUT US*/
 .about_us {
   margin: 200px 0;
 }
@@ -270,7 +270,7 @@ nav .nav-item .nav-link:before {
   object-position: top;
 }
 
-/* Academic */
+/* ACADEMIC */
 .academic {
   margin-top: 200px;
   margin-bottom: 150px;
@@ -369,6 +369,13 @@ nav .nav-item .nav-link:before {
   font-size: 18px;
 }
 
+/* FEEDBACK */
+.feedback {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+/* LOADING AMINATION */
 .loader {
   position: fixed;
   top: 0;
