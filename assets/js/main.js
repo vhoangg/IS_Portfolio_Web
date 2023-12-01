@@ -1,10 +1,42 @@
-// Nav bar
-$(window).scroll(function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $(".header").addClass("bg-white shadow")
+// Light/Dark theme
+$("#theme-icon").click(function () {
+    $("body").removeClass("gradient");
+    let element = document.body;
+    let theme = element.dataset.bsTheme;
+    element.dataset.bsTheme = theme == "light" ? "dark" : "light";
+    if (theme == "dark") {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $(".header").removeClass("bg-white bg-dark")
+            $(".header").addClass("bg-white");
+        }
+        $("#theme-icon").attr("src", "./assets/images/moon.png")
+        // $("body").addClass("gradient");
     }
     else {
-        $(".header").removeClass("bg-white shadow")
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $(".header").removeClass("bg-white bg-dark")
+            $(".header").addClass("bg-dark");
+        }
+        $("#theme-icon").attr("src", "./assets/images/sun.png")
+        $("path").attr("fill", "white")
+
+    }
+})
+
+// Nav bar
+
+
+$(window).scroll(function () {
+    let theme = document.body.dataset.bsTheme;
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (theme == "light") {
+            $(".header").addClass("bg-white shadow");
+        }
+        else
+            $(".header").addClass("bg-dark shadow");
+    }
+    else {
+        $(".header").removeClass("bg-white bg-dark shadow")
     }
 });
 $(".navbar-toggler").click(function () {
