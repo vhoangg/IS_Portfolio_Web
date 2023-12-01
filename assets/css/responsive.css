@@ -143,19 +143,19 @@
 
 /* ACADEMIC */
 @media (max-width: 1200px) {
-  .daotao .content p {
+  .academic .content p {
     font-size: 16px;
   }
 }
 
 @media (max-width: 992px) {
-  .daotao .content p {
+  .academic .content p {
     font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  .daotao .content p {
+  .academic .content p {
     font-size: 14px;
   }
 }
