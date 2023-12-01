@@ -5,7 +5,7 @@
     {"name": "Văn Đức Sơn Hà", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/havds.png"},
     {"name": "Huỳnh Đức Huy", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/huyhd.png"},
     {"name": "Nguyễn Thị Hạnh", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/hanhnt.png"},
-    {"name": "Phạm Ngọc Anh Thơ", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
-    {"name": "Nguyễn Minh Hằng", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/default.png"},
+    {"name": "Phạm Ngọc Anh Thơ", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/thopna.png"},
+    {"name": "Nguyễn Minh Hằng", "level": "THẠC SĨ","role": "Giảng viên", "img": "./assets/images/GV/hangnm.png"},
     {"name": "Nguyễn Dương Tùng", "level": "CỬ NHÂN","role": "Trợ giảng", "img": "./assets/images/GV/tungnd.png"}
 ]
