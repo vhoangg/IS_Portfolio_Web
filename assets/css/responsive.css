@@ -1,4 +1,30 @@
-/* home */
+/* Break point
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+*/
+/* FOOTER */
+@media (max-width: 576px) {
+  .footer .container .f-title {
+    font-size: 20px;
+  }
+
+  .footer .container .f-right {
+    font-size: 20px;
+  }
+
+  .footer .container .f-info {
+    font-size: 14px;
+  }
+
+  .footer hr {
+    width: 70px;
+  }
+}
+
+/* HOMEPAGE */
 @media (max-width: 1400px) {
   .homepage .section .title {
     font-size: 30px;
@@ -23,9 +49,9 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .homepage .banner img {
-    max-width: 350px;
+    max-width: auto;
     height: auto;
   }
 
@@ -33,6 +59,7 @@
     max-height: 350px;
     max-width: 350px;
   }
+
   .homepage .contact .fragment {
     width: 320px;
   }
@@ -41,7 +68,8 @@
     font-size: auto;
   }
 }
-@media (max-width: 770px) {
+
+@media (max-width: 768px) {
   .homepage .section {
     margin-bottom: 100px;
   }
@@ -51,7 +79,7 @@
   }
 
   .homepage .contact .fragment {
-    max-width: 160px;
+    max-width: 170px;
     height: auto;
     padding: 10px !important;
   }
@@ -69,12 +97,32 @@
     max-height: 20px;
   }
 
-  .homepage .line {
+  .homepage .contact .line {
     margin-bottom: 5px !important;
+    width: 40px;
+  }
+
+  .homepage .contact {
+    gap: 20px;
   }
 }
 
-/* staff */
+@media (max-width: 550px) {
+  .homepage .contact {
+    gap: 10px;
+  }
+}
+
+/* galaxy fold */
+@media (max-width: 300px) {
+
+  .homepage iframe {
+    max-height: 200px;
+    max-width: 250px;
+  }
+}
+
+/* TEACHING-STAFF */
 @media screen and (max-width: 1400px) {
   .staff .banner p {
     font-size: 800% !important;
@@ -93,12 +141,13 @@
   }
 }
 
-/* dao tao */
+/* ACADEMIC */
 @media (max-width: 1200px) {
   .daotao .content p {
     font-size: 16px;
   }
 }
+
 @media (max-width: 992px) {
   .daotao .content p {
     font-size: 12px;
