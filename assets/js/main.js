@@ -10,7 +10,13 @@ $("#theme-icon").click(function () {
             $(".header").addClass("bg-white");
         }
         $("#theme-icon").attr("src", "./assets/images/moon.png")
-        $(".navbar-brand > img").attr("src", "./assets/images/logo-khoa.png")
+
+        $("path").attr("fill", "black")
+
+        // Kiểm tra nav-bar có đang mở
+        if (!$(".navbar").hasClass('bg-dark')) {
+            $(".navbar-brand > img").attr("src", "./assets/images/logo-khoa.png")
+        } 
         // $("body").addClass("gradient");
         $("#feedback").css("background-image", "url('./assets/images/feedback-light.png')");
     }
@@ -40,9 +46,13 @@ $(window).scroll(function () {
         $(".header").removeClass("bg-white bg-dark shadow")
     }
 });
+
+// Xử lí sự kiện toggle nav-bar
 $(".navbar-toggler").click(function () {
     $(".navbar").toggleClass("navbar-dark bg-dark");
     $(".nav-link").toggleClass("removeNavAnimated")
+
+    // Kiểm tra xem navbar hiện tại đang có bg là gì, đổi màu logo theo bg
     if ($(".navbar").hasClass('bg-dark')) {
         $(".navbar .logo").attr('src', './assets/images/logo-footer.png');
     } else  {
