@@ -16,11 +16,9 @@
 }
 
 .gradient {
-  background: linear-gradient(
-    151deg,
-    rgba(38, 105, 246, 0.2) 4.76%,
-    rgba(38, 105, 246, 0) 14.79%
-  );
+  background: linear-gradient(151deg,
+      rgba(38, 105, 246, 0.2) 4.76%,
+      rgba(38, 105, 246, 0) 14.79%);
 }
 
 .button-style {
@@ -356,9 +354,11 @@ nav .nav-item .nav-link:before {
   height: 450px;
   object-fit: cover;
 }
+
 .academic .img-item:hover .img-layer {
   top: 0;
 }
+
 .academic .img-layer {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
@@ -424,6 +424,10 @@ nav .nav-item .nav-link:before {
 }
 
 .modal .btn {
+  color: #fff;
+}
+
+.modal .btn:hover {
   color: #fff;
 }
 
