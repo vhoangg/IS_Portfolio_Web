@@ -10,7 +10,7 @@ $("#theme-icon").click(function () {
             $(".header").addClass("bg-white");
         }
         $("#theme-icon").attr("src", "./assets/images/moon.png")
-        $(".navbar-brand > img").attr("src", "./assets/images/logo-footer.png")
+        $(".navbar-brand > img").attr("src", "./assets/images/logo-khoa.png")
         // $("body").addClass("gradient");
         $("#feedback").css("background-image", "url('./assets/images/feedback-light.png')");
     }
@@ -21,6 +21,7 @@ $("#theme-icon").click(function () {
         }
         $("#theme-icon").attr("src", "./assets/images/sun.png")
         $("path").attr("fill", "white")
+        $(".navbar-brand > img").attr("src", "./assets/images/logo-footer.png")
         $("#feedback").css("background-image", "url('./assets/images/feedback-dark.png')");
     }
 })
