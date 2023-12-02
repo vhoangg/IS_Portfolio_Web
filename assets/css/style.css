@@ -5,11 +5,22 @@
   border: none;
   text-decoration: none !important;
   font-family: "Roboto", sans-serif;
+}
+
+:root {
   --blue: #2669f6;
 }
 
 .blue {
   color: #2669f6 !important;
+}
+
+.gradient {
+  background: linear-gradient(
+    151deg,
+    rgba(38, 105, 246, 0.2) 4.76%,
+    rgba(38, 105, 246, 0) 14.79%
+  );
 }
 
 .button-style {
@@ -54,7 +65,7 @@
 }
 
 nav {
-  padding: 0 !important
+  padding: 0 !important;
 }
 
 nav .container {
@@ -83,6 +94,12 @@ nav .nav-item .nav-link:before {
 
 .navbar-nav {
   column-gap: 50px;
+}
+
+#theme-icon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
 }
 
 /* FOOTER*/
@@ -183,7 +200,6 @@ nav .nav-item .nav-link:before {
 
 .homepage .contact .fragment {
   border-radius: 20px;
-  background: #fff;
   box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
   width: 380px;
   cursor: pointer;
@@ -270,6 +286,15 @@ nav .nav-item .nav-link:before {
   object-position: top;
 }
 
+.staff .card:hover {
+  box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
+}
+
+.staff .card:hover h5 {
+  color: #2669f6;
+}
+
 /* ACADEMIC */
 .academic {
   margin-top: 200px;
@@ -295,7 +320,6 @@ nav .nav-item .nav-link:before {
 
 .academic .info .fragment {
   border-radius: 20px;
-  background: #fff;
   box-shadow: 0px 4px 90px 10px rgba(0, 0, 0, 0.12);
   width: 380px;
 }
@@ -312,7 +336,6 @@ nav .nav-item .nav-link:before {
 
 .academic .slide-item {
   border-radius: 20px;
-  background: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
   max-width: 350px;
   height: 330px;
@@ -324,21 +347,19 @@ nav .nav-item .nav-link:before {
   transition: all 0.5s;
 }
 
-.img-item {
+.academic .img-item {
   position: relative;
   overflow: hidden;
 }
 
-.img-item img {
+.academic .img-item img {
   height: 450px;
   object-fit: cover;
 }
-
-.img-item:hover .img-layer {
+.academic .img-item:hover .img-layer {
   top: 0;
 }
-
-.img-layer {
+.academic .img-layer {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -350,16 +371,16 @@ nav .nav-item .nav-link:before {
   transition: all 0.4s;
 }
 
-.img-layer ul {
+.academic .img-layer ul {
   list-style: none;
   font-size: 20px;
 }
 
-.img-layer ul a {
+.academic .img-layer ul a {
   color: white;
 }
 
-.img-layer ul a:hover {
+.academic .img-layer ul a:hover {
   text-decoration: underline !important;
 }
 
@@ -422,6 +443,7 @@ nav .nav-item .nav-link:before {
   align-items: center;
   background-color: white;
   transition: opacity 0.75s, visibility 0.75s;
+  z-index: 5000;
 }
 
 .loader-hidden {
