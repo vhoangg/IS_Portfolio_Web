@@ -43,6 +43,11 @@ $(window).scroll(function () {
 $(".navbar-toggler").click(function () {
     $(".navbar").toggleClass("navbar-dark bg-dark");
     $(".nav-link").toggleClass("removeNavAnimated")
+    if ($(".navbar").hasClass('bg-dark')) {
+        $(".navbar .logo").attr('src', './assets/images/logo-footer.png');
+    } else  {
+        $(".navbar .logo").attr('src', './assets/images/logo-khoa.png');
+    }
 })
 
 $('html').click(function (event) {
