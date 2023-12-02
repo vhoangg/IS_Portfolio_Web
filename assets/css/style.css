@@ -306,12 +306,16 @@ nav .nav-item .nav-link:before {
   transition: all 0.5s;
 }
 
+.academic #slider {
+  display: none;
+}
+
 .academic .slide-item {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
-  width: 350px;
-  height: 300px;
+  max-width: 350px;
+  height: 330px;
 }
 
 .academic .slide-item:hover {
@@ -329,9 +333,11 @@ nav .nav-item .nav-link:before {
   height: 450px;
   object-fit: cover;
 }
+
 .img-item:hover .img-layer {
   top: 0;
 }
+
 .img-layer {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
@@ -371,8 +377,37 @@ nav .nav-item .nav-link:before {
 
 /* FEEDBACK */
 .feedback {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 150px;
+  min-height: 50vh;
+  display: block;
+}
+
+.feedback .section {
+  width: 50%;
+}
+
+.feedback .btn {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.feedback .btn:hover {
+  color: white;
+}
+
+.feedback .section .title {
+  font-size: 40px;
+  font-weight: 400;
+
+}
+
+.modal .btn {
+  color: #fff;
+}
+
+.modal img {
+  max-height: 200px;
 }
 
 /* LOADING AMINATION */

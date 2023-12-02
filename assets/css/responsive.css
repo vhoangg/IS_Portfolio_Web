@@ -122,6 +122,15 @@
   }
 }
 
+/* ABOUT-US */
+
+@media (max-width: 768px) {
+  body .about_us {
+    margin: 150px 0;
+
+  }
+}
+
 /* TEACHING-STAFF */
 @media screen and (max-width: 1400px) {
   .staff .banner p {
@@ -141,6 +150,14 @@
   }
 }
 
+@media (max-width: 768px) {
+  .academic {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+}
+
+
 /* ACADEMIC */
 @media (max-width: 1200px) {
   .academic .content p {
@@ -155,7 +172,28 @@
 }
 
 @media (max-width: 768px) {
+  .academic {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
   .academic .content p {
     font-size: 14px;
+  }
+
+  .academic .high-program .info {
+    display: none !important;
+  }
+
+  .academic #slider {
+    display: block !important;
+  }
+
+  /* galaxy fold */
+  @media (max-width: 300px) {
+
+    .academic #slider .slide-item {
+      font-size: smaller;
+    }
   }
 }

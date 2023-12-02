@@ -15,10 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+        background-image: url("./assets/images/feedback-banner.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 60%;
+        /* background-size: 100% 100%; */
+    }
+</style>
 
 <body>
     <div class="header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
             <div class="container">
                 <a class="navbar-brand" href="./home.html">
                     <img src="./assets/images/logo-khoa.png" alt="">
@@ -55,27 +65,54 @@
 
     <div class="feedback">
         <div class="container">
-            <div
-                class="section d-flex flex-md-row flex-column-reverse justify-content-between align-items-center reveal fade-bottom">
-                <div class="content">
+            <div class="section align-items-center reveal fade-bottom">
+                <p class="title blue text-center">GÓP Ý - THẮC MẮC</p>
+                <!-- Mặc định của form needs-validation: các input có required sẵn -->
+                <form class="needs-validation" novalidate>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label">Example label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
-                            placeholder="Example input placeholder">
+                        <label for="name" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">
+                            Vui lòng nhập đúng họ và tên
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2"
-                            placeholder="Another input placeholder">
+                        <label for="feedback-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="feedback-email" required>
+                        <div class="invalid-feedback">
+                            Vui lòng nhập đúng email
+                        </div>
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Nội dung góp ý</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        <div class="invalid-feedback">
+                            Vui lòng không để trống
+                        </div>
+                    </div>
+                    <button type="submit" class="btn button-style">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center blue my-3 ">Gửi thành công</h2>
+                    <img class="img-fluid  d-block m-auto" src="assets/images/thankyou.png" alt="">
+                    <p class="text-center my-3">Cảm ơn bạn đã gửi góp ý - thắc mắc.
+                        <br>Chúng tôi sẽ sớm xử lý và giải đáp trong thời gian
+                        sớm
+                        nhất.
+                    </p>
                 </div>
-                <div class="img banner">
-                    <img class="img-fluid" src="./assets/images/feedback-banner.png" alt="">
+                <div class="modal-footer">
+                    <button type="button" class="btn button-style">Đóng</button>
                 </div>
             </div>
         </div>
     </div>
-
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -109,6 +146,26 @@
     </div>
 </body>
 <script src="./assets/js/main.js"></script>
+<script>
+    (function () {
+        'use strict'
 
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
 
 </html>
