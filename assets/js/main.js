@@ -10,7 +10,9 @@ $("#theme-icon").click(function () {
             $(".header").addClass("bg-white");
         }
         $("#theme-icon").attr("src", "./assets/images/moon.png")
+        $(".navbar-brand > img").attr("src", "./assets/images/logo-khoa.png")
         // $("body").addClass("gradient");
+        $("#feedback").css("background-image", "url('./assets/images/feedback-light.png')");
     }
     else {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -19,13 +21,12 @@ $("#theme-icon").click(function () {
         }
         $("#theme-icon").attr("src", "./assets/images/sun.png")
         $("path").attr("fill", "white")
-
+        $(".navbar-brand > img").attr("src", "./assets/images/logo-footer.png")
+        $("#feedback").css("background-image", "url('./assets/images/feedback-dark.png')");
     }
 })
 
 // Nav bar
-
-
 $(window).scroll(function () {
     let theme = document.body.dataset.bsTheme;
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -51,7 +52,6 @@ $('html').click(function (event) {
         $('.navbar-toggle').toggleClass('highlight');
         CloseNav();
     }
-
 });
 
 // Animations
