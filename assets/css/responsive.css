@@ -210,3 +210,26 @@
     margin-bottom: 50px;
   }
 }
+
+/* FEEDBACK */
+@media (max-width: 768px) {
+  .feedback .section {
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(246, 246, 246, 0.529);
+    border-radius: 20px;
+  }
+
+  .feedback .section .title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .feedback .section .title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}

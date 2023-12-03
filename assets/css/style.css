@@ -16,11 +16,9 @@
 }
 
 .gradient {
-  background: linear-gradient(
-    151deg,
-    rgba(38, 105, 246, 0.2) 4.76%,
-    rgba(38, 105, 246, 0) 14.79%
-  );
+  background: linear-gradient(151deg,
+      rgba(38, 105, 246, 0.2) 4.76%,
+      rgba(38, 105, 246, 0) 14.79%);
 }
 
 .button-style {
@@ -242,6 +240,10 @@ nav .nav-item .nav-link:hover:after {
   font-size: 18px;
 }
 
+.homepage .contact a {
+  color: black;
+}
+
 .homepage .line {
   width: 100px;
   height: 3px;
@@ -429,7 +431,7 @@ nav .nav-item .nav-link:hover:after {
 }
 
 .feedback .section {
-  width: 50%;
+  width: 60%;
 }
 
 .feedback .btn {
@@ -442,8 +444,8 @@ nav .nav-item .nav-link:hover:after {
 }
 
 .feedback .section .title {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 38px;
+  font-weight: 500;
 }
 
 .modal .btn {
