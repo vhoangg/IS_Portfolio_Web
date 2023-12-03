@@ -319,6 +319,23 @@ nav .nav-item .nav-link:hover:after {
   color: #2669f6;
 }
 
+.staff form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.staff #search-teacher {
+  width: 90%;
+  padding: 20px;
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+.staff .result {
+  display: none;
+}
+
 /* ACADEMIC */
 .academic {
   margin-top: 200px;
