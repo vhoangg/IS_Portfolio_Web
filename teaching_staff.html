@@ -63,36 +63,52 @@
                 <p>ĐỘI NGŨ <br>GIẢNG VIÊN</p>
             </div>
 
-            <div class=" my-5">
-                <div class="title text-center mb-5 reveal fade-bottom">
-                    <p class="h1">Bộ môn Hệ thống Thông tin Quản lý</p>
-                    <p class="h1 blue">(Department of Management Information System)</p>
+            <form action="">
+                <input id="search-teacher" class="reveal fade-bottom" type="text" placeholder="Tìm kiếm giáo viên">
+            </form>
+
+            <div class="result">
+                <div class="title text-center mb-5">
                 </div>
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 htttql reveal fade-bottom">
-
-                </div>
-            </div>
-
-            <div class=" my-5">
-                <div class="title text-center mb-5 reveal fade-bottom">
-                    <p class="h1">Bộ môn Hệ thống Thông tin Thông minh</p>
-                    <p class="h1 blue">(Department of Intelligent Information System)</p>
-                </div>
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 httttm reveal fade-bottom">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 search-result my-5">
 
                 </div>
             </div>
 
-            <div class=" my-5">
-                <div class="title text-center mb-5 reveal fade-bottom">
-                    <p class="h1">Bộ môn Thương mại Điện tử</p>
-                    <p class="h1 blue">(Department of E-Commerce)</p>
+            <div class="teachers">
+
+
+                <div class="my-5">
+                    <div class="title text-center mb-5 reveal fade-bottom">
+                        <p class="h1">Bộ môn Hệ thống Thông tin Quản lý</p>
+                        <p class="h1 blue">(Department of Management Information System)</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 htttql reveal fade-bottom">
+
+                    </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 tmdt reveal fade-bottom">
+                <div class=" my-5">
+                    <div class="title text-center mb-5 reveal fade-bottom">
+                        <p class="h1">Bộ môn Hệ thống Thông tin Thông minh</p>
+                        <p class="h1 blue">(Department of Intelligent Information System)</p>
+                    </div>
 
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 httttm reveal fade-bottom">
+
+                    </div>
+                </div>
+
+                <div class=" my-5">
+                    <div class="title text-center mb-5 reveal fade-bottom">
+                        <p class="h1">Bộ môn Thương mại Điện tử</p>
+                        <p class="h1 blue">(Department of E-Commerce)</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 tmdt reveal fade-bottom">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,7 +152,52 @@
         let htttql = document.querySelector('.htttql');
         let httttm = document.querySelector('.httttm');
         let tmdt = document.querySelector('.tmdt');
+        let result = document.querySelector('.search-result')
 
+
+        $('#search-teacher').change(function () {
+            $('.search-result').empty();
+            if ($('#search-teacher').val()) {
+                $('.teachers').css('display', 'none');
+                $('.result').css('display', 'block');
+
+                let search_name = removeVietnameseTones($('#search-teacher').val().toUpperCase());
+
+                console.log(search_name);
+
+                fetch("./data/GV.json")
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(data => {
+                        data.map(teacher => {
+                            const { name, level, role, img } = teacher;
+                            let temp = removeVietnameseTones(name.toUpperCase());
+                            if (temp.match(search_name)) {
+                                result.innerHTML +=
+                                    `
+                                <div class="col">
+                                    <div class="card align-items-center text-center pt-3">
+                                        <img src="${img}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-uppercase">${name}</h5>
+                                            <p class="card-text text-muted mb-0">${level}</p>
+                                            <p class="card-text">${role}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                `
+                            }
+                        })
+                    })
+            }
+            else {
+                $('.teachers').css('display', 'block');
+                $('.result').css('display', 'none');
+
+            }
+
+        });
 
         fetch("./data/htttql.json")
             .then(function (response) {
