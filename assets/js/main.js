@@ -69,12 +69,10 @@ $('html').click(function (event) {
     }
 });
 
-// Animations
+// Scroll Animations
 var reveals = document.querySelectorAll(".reveal");
 reveals[0].classList.add("active");
 function reveal() {
-
-
     for (var i = 1; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;

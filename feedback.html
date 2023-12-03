@@ -93,13 +93,13 @@
                             Vui lòng không để trống
                         </div>
                     </div>
-                    <button type="submit" class="btn button-style" data-bs-toggle="modal"
-                        data-bs-target="#popup-thanks">Gửi</button>
+                    <button type="submit" id="submit-btn" class="btn button-style" data-bs-toggle="modal"
+                        data-bs-target=".pop-up">Gửi</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="modal" tabindex="-1" id="popup-thanks">
+    <div class="modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
@@ -117,6 +117,7 @@
             </div>
         </div>
     </div>
+
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -162,6 +163,12 @@
             .forEach(function (form) {
                 form.addEventListener('submit', function (event) {
                     if (!form.checkValidity()) {
+                        $('.modal').removeClass('pop-up');
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    else {
+                        $('.modal').addClass('pop-up');
                         event.preventDefault()
                         event.stopPropagation()
                     }
@@ -170,6 +177,7 @@
                 }, false)
             })
     })()
+
 </script>
 
 </html>
