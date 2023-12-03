@@ -16,9 +16,11 @@
 }
 
 .gradient {
-  background: linear-gradient(151deg,
-      rgba(38, 105, 246, 0.2) 4.76%,
-      rgba(38, 105, 246, 0) 14.79%);
+  background: linear-gradient(
+    151deg,
+    rgba(38, 105, 246, 0.2) 4.76%,
+    rgba(38, 105, 246, 0) 14.79%
+  );
 }
 
 .button-style {
@@ -78,6 +80,10 @@ nav img {
 
 .nav-link:hover {
   color: var(--blue) !important;
+}
+
+nav svg:hover path {
+  fill: var(--blue) !important;
 }
 
 nav .nav-item .nav-link {

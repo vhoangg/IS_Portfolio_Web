@@ -118,7 +118,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary modal-close" data-bs-dismiss="modal">Đóng</button>
                 </div>
             </div>
         </div>
@@ -168,21 +168,30 @@
         Array.prototype.slice.call(forms)
             .forEach(function (form) {
                 form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        $('.modal').removeClass('pop-up');
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    else {
-                        $('.modal').addClass('pop-up');
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
                     form.classList.add('was-validated')
                 }, false)
             })
     })()
+
+    $('form').change(function () {
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                if (form.checkValidity()) {
+                    $('.modal').addClass('pop-up');
+                }
+                else {
+                    $('.modal').removeClass('pop-up');
+                }
+            }, false)
+    });
+
+    $('form').submit(function () {
+        event.preventDefault()
+        event.stopPropagation()
+    })
 
 </script>
 

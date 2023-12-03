@@ -38,24 +38,6 @@ $("#theme-icon").click(function () {
     }
 })
 
-$('.list-sort').attr('colspan', function(index, attr){
-    return attr == 6 ? null : 6;
-});
-// Đổi màu icon theme khi hover
-// if ($("#theme-icon path").attr("fill") == "black") {
-//     $("#theme-icon").hover(function (){
-//         $("#theme-icon path").attr("fill", function(index, attr){
-//             return attr === "blue" ? "black" : "blue";
-//         })
-//     })
-// }
-// else {
-//     $("#theme-icon").hover(function (){
-//         $("#theme-icon path").attr("fill", function(index, attr){
-//             return attr === "blue" ? "white" : "blue";
-//         })
-//     })
-// }
 // Nav bar
 $(window).scroll(function () {
     let theme = document.body.dataset.bsTheme;
