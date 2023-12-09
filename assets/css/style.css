@@ -430,7 +430,7 @@ nav .nav-item .nav-link:hover:after {
 }
 
 .academic .img-layer ul a:hover {
-  text-decoration: underline !important;
+  color: #2669f6;
 }
 
 .carousel-item {
