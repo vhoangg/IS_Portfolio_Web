@@ -202,8 +202,12 @@
                 $('.result').css('display', 'none');
 
             }
-
         });
+
+        $('form').submit(function () {
+            event.preventDefault()
+            event.stopPropagation()
+        })
 
         fetch("./data/htttql.json")
             .then(function (response) {
